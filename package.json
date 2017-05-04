@@ -1,0 +1,14 @@
+{
+  "name": "adidas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build.js",
+  "scripts": {
+    "start": ""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "normalize.css": "^7.0.0"
+  }
+}

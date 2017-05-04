@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Adidas project</title>
+  <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css">
+  <link rel="stylesheet" href="./assets/stylesheets/fonts.css">
+  <link rel="stylesheet" href="./assets/stylesheets/app.css">
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position:absolute;width:0;height:0;visibility:hidden">
+    <symbol id="icon-search" viewBox="0 0 30 32">
+      <g fill="none" fill-rule="evenodd" transform="translate(2 2)">
+        <ellipse cx="10.136" cy="10.521" stroke="#DCDCDC" stroke-width="3" rx="10.136" ry="10.521"/>
+        <path fill="#DCDCDC" d="M16.328 20.589a1.688 1.688 0 0 1-.005-2.33 1.54 1.54 0 0 1 2.244.005l8.351 8.668c.62.645.627 1.684.004 2.33a1.54 1.54 0 0 1-2.244-.005"/>
+      </g>
+    </symbol>
+  </svg>
+  <div class="AppLayout">
+    <aside class="AppSidebar">
+      <div class="AppSidebar-header">
+        <div class="Logo">
+          <img class="Logo-thumb" src="./assets/images/logo/logo.png" srcset="./assets/images/logo/logo@2x.png 2x, ./assets/images/logo/logo@3x.png 3x">
+        </div>
+        <div class="Search">
+          <label for="search-field" class="Search-label">
+            <svg class="Search-icon"><use xlink:href="#icon-search"></use></svg>
+          </label>
+          <input id="search-field" class="Search-input" type="text" name="search-field">
+        </div>
+      </div>
+      <div class="AppSidebar-main">
+        <nav class="Menu">
+          <div class="Menu-item is-active">
+            <div class="Menu-itemTitle">
+              <a class="Menu-itemLink" href="#">Sports</a>
+            </div>
+            <div class="Menu-subList">
+              <div class="Menu-subItem">
+                <a href="#" class="Menu-subItemLink">Shoes</a>
+              </div>
+              <div class="Menu-subItem">
+                <a href="#" class="Menu-subItemLink">Clothing</a>
+              </div>
+              <div class="Menu-subItem">
+                <a href="#" class="Menu-subItemLink">Accesories</a>
+              </div>
+            </div>
+          </div>
+          <div class="Menu-item">
+            <div class="Menu-itemTitle">
+              <a class="Menu-itemLink" href="#">Brands</a>
+            </div>
+          </div>
+          <div class="Menu-item">
+            <div class="Menu-itemTitle">
+              <a class="Menu-itemLink" href="#">Micoach</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </aside>
+    <main class="AppMain"></main>
+  </div>
+</body>
+</html>

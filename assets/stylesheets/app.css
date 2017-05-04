@@ -1,0 +1,139 @@
+:root {
+  --base-font-size: 24px;
+  --base-font-family: 'AndaleMono', Helvetica, Arial, sans-serif;
+
+  --top-menu-font-family: 'AvenirNext', Helvetica, Arial, sans-serif;
+  --sub-menu-font-family: var(--base-font-family);
+
+  --app-sidebar-width: 28.75%;
+
+  --color-cod-gray: #0E0E0E;
+  --color-white: #FFFFFF;
+  --color-mine-shaft: #393939;
+  --color-empreror: #2F2F2F;
+  --color-scorpion: #3C3C3C;
+  --color-asphalt: #373737;
+  --color-alto: #DCDCDC;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--base-font-family);
+  font-size: var(--base-font-size);
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+.AppLayout {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: var(--app-sidebar-width) auto;
+}
+
+.AppSidebar {
+  padding-left: 22px;
+  padding-right: 22px;
+  background-color: var(--color-cod-gray);
+}
+
+.AppSidebar-header {
+  padding-top: 34px;
+}
+
+.AppSidebar-main {
+  padding-top: 151px;
+}
+
+.Logo {
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+.Logo-thumb {
+  width: 76px;
+  height: 76px;
+  object-fit: contain;
+}
+
+.Search {
+  position: relative;
+}
+
+.Search-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 54px;
+}
+
+.Search-icon {
+  width: 28px;
+  height: 30px;
+}
+
+.Search-input {
+  padding: 10px 10px 10px 55px;
+  width: 100%;
+  height: 54px;
+  box-sizing: border-box;
+  background-color: transparent;
+  color: var(--color-mine-shaft);
+  border: none;
+  border-bottom: 4px solid var(--color-asphalt);
+  text-transform: uppercase;
+  font-size: var(--base-font-size);
+  font-weight: bold;
+}
+
+.Search-input:focus {
+  outline: none;
+  border-bottom-color: var(--color-alto);
+}
+
+.Menu {
+  text-align: center;
+  text-transform: uppercase;
+}
+.Menu-item {
+  margin-bottom: 29px;
+}
+.Menu-itemTitle {}
+.Menu-itemLink {
+  font-weight: bold;
+  font-family: var(--top-menu-font-family);
+}
+
+.Menu-itemLink {
+  color: var(--color-empreror);  
+}
+
+.Menu-subItemLink {
+  color: var(--color-scorpion);  
+}
+
+.Menu-item.is-active .Menu-itemLink,
+.Menu-item.is-active .Menu-subItemLink {
+  color: var(--color-white);
+}
+
+.Menu-subList {
+  margin-top: 37px;
+  margin-bottom: 56px;
+}
+.Menu-subItem {
+  margin-bottom: 26px;
+}
+.Menu-subItemLink {}
