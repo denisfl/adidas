@@ -127,6 +127,19 @@ a:hover {
   color: var(--color-scorpion);  
 }
 
+.Menu-item.is-active .Menu-itemLink {
+  position: relative;
+}
+.Menu-item.is-active .Menu-itemLink::after {
+  content: '';
+  position: absolute;
+  right: -20px;
+  top: 9px;
+  width: 14px;
+  height: 9px;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNCA5Ij4gICAgPGcgZmlsbD0iI0ZGRiIgZmlsbC1ydWxlPSJldmVub2RkIj4gICAgICAgIDxyZWN0IHdpZHRoPSIzIiBoZWlnaHQ9IjkiIHg9IjMiIHJ4PSIxLjUiIHRyYW5zZm9ybT0icm90YXRlKC00NSA0LjUgNC41KSIvPiAgICAgICAgPHJlY3Qgd2lkdGg9IjMiIGhlaWdodD0iOSIgeD0iOCIgcng9IjEuNSIgdHJhbnNmb3JtPSJyb3RhdGUoNDcgOS41IDQuNSkiLz4gICAgPC9nPjwvc3ZnPg==');
+}
+
 .Menu-item.is-active .Menu-itemLink,
 .Menu-item.is-active .Menu-subItemLink {
   color: var(--color-white);
