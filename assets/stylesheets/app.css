@@ -2,10 +2,10 @@
   --base-font-size: 24px;
   --base-font-family: 'AndaleMono', Helvetica, Arial, sans-serif;
 
-  --top-menu-font-family: 'AvenirNext', Helvetica, Arial, sans-serif;
-  --sub-menu-font-family: var(--base-font-family);
+  --secondary-font-family: 'AvenirNext', Helvetica, Arial, sans-serif;
 
   --app-sidebar-width: 28.75%;
+  --app-main-padding: 23px;
 
   --color-cod-gray: #0E0E0E;
   --color-white: #FFFFFF;
@@ -13,7 +13,10 @@
   --color-empreror: #2F2F2F;
   --color-scorpion: #3C3C3C;
   --color-asphalt: #373737;
+  --color-gallery: #D7D7D7;
+  --color-bon-jour: #EBEBEB;
   --color-alto: #DCDCDC;
+  --color-royal-blue: #4D42F8;
 }
 
 *,
@@ -116,7 +119,7 @@ a:hover {
 
 .Menu-itemLink {
   font-weight: bold;
-  font-family: var(--top-menu-font-family);
+  font-family: var(--secondary-font-family);
 }
 
 .Menu-itemLink {
@@ -155,3 +158,54 @@ a:hover {
 }
 
 .Menu-subItemLink {}
+
+.Filters {
+  display: flex;
+  align-items: center;
+  padding: 11px var(--app-main-padding) 35px;
+}
+
+.Filters-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 29px;
+  width: 55px;
+  height: 55px;
+  background-color: var(--color-bon-jour);
+}
+
+.Filters-group {
+  display: flex;
+  align-items: center;
+}
+.Filters-group + .Filters-group {
+  margin-left: 72px;
+}
+
+.Filters-groupItem {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  color: var(--color-gallery);
+  cursor: pointer;
+}
+
+.Filters-groupItem.is-active {
+  color: var(--color-royal-blue);
+}
+
+.Filters-groupItem + .Filters-groupItem {
+  margin-left: 16px;
+}
+
+.Filters-groupItem,
+.Filters-groupLabel {
+  text-transform: uppercase;
+  font-family: var(--secondary-font-family);
+  font-weight: bold;
+}
+
+.Filters-groupLabel {
+  color: var(--color-royal-blue);
+}
