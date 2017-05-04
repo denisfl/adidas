@@ -107,10 +107,13 @@ a:hover {
   text-align: center;
   text-transform: uppercase;
 }
+
 .Menu-item {
   margin-bottom: 29px;
 }
+
 .Menu-itemTitle {}
+
 .Menu-itemLink {
   font-weight: bold;
   font-family: var(--top-menu-font-family);
@@ -133,7 +136,9 @@ a:hover {
   margin-top: 37px;
   margin-bottom: 56px;
 }
+
 .Menu-subItem {
   margin-bottom: 26px;
 }
+
 .Menu-subItemLink {}
