@@ -241,17 +241,13 @@ a:hover {
 .products {
   display: flex;
   flex-wrap: wrap;
-  margin-left: calc(-1  * var(--product-item-padding));
   padding-left: var(--app-main-padding);
   padding-right: var(--app-main-padding);
 }
 
 .products-item {
   margin-bottom: 17px;
-  margin-left: var(--product-item-padding);
   padding: 9px;
-  flex: 0 0 calc(100% / 3 - var(--product-item-padding));
-  width: calc(100% / 3 - var(--product-item-padding));
   background-color: var(--color-wild-sand);
 }
 

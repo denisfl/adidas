@@ -1,18 +1,22 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>Adidas project</title>
   <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css">
+  <link rel="stylesheet" href="./node_modules/flexboxgrid/css/flexboxgrid.min.css">
   <link rel="stylesheet" href="./assets/stylesheets/fonts.css">
   <link rel="stylesheet" href="./assets/stylesheets/app.css">
 </head>
+
 <body>
   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position:absolute;width:0;height:0;visibility:hidden">
     <symbol id="icon-search" viewBox="0 0 30 32">
       <g fill="none" fill-rule="evenodd" transform="translate(2 2)">
-        <ellipse cx="10.136" cy="10.521" stroke="#DCDCDC" stroke-width="3" rx="10.136" ry="10.521"/>
-        <path fill="#DCDCDC" d="M16.328 20.589a1.688 1.688 0 0 1-.005-2.33 1.54 1.54 0 0 1 2.244.005l8.351 8.668c.62.645.627 1.684.004 2.33a1.54 1.54 0 0 1-2.244-.005"/>
+        <ellipse cx="10.136" cy="10.521" stroke="#DCDCDC" stroke-width="3" rx="10.136" ry="10.521" />
+        <path fill="#DCDCDC" d="M16.328 20.589a1.688 1.688 0 0 1-.005-2.33 1.54 1.54 0 0 1 2.244.005l8.351 8.668c.62.645.627 1.684.004 2.33a1.54 1.54 0 0 1-2.244-.005"
+        />
       </g>
     </symbol>
     <symbol id="icon-more" viewBox="0 0 159 15">
@@ -86,62 +90,79 @@
         </div>
       </div>
       <div class="products">
-        <div class="products-item has-sale">
-          <div class="products-item-cover">
-            <div class="products-item-label">
-              <span class="label">Sale</span>
+        <div class="row">
+          <div class="col-xs-4">
+            <div class="products-item has-sale">
+              <div class="products-item-cover">
+                <div class="products-item-label">
+                  <span class="label">Sale</span>
+                </div>
+                <img class="products-item-cover-thumb" src="./assets/images/products/product-01.jpg">
+              </div>
+              <a href="#" class="products-item-link">$170</a>
             </div>
-            <img class="products-item-cover-thumb" src="./assets/images/products/product-01.jpg">
           </div>
-          <a href="#" class="products-item-link">$170</a>
+          <div class="col-xs-4">
+            <div class="products-item has-sale">
+              <div class="products-item-cover">
+                <div class="products-item-label">
+                  <span class="label">Sale</span>
+                </div>
+                <img class="products-item-cover-thumb" src="./assets/images/products/product-02.jpg">
+              </div>
+              <a href="#" class="products-item-link">$230</a>
+            </div>
+          </div>
+          <div class="col-xs-4">
+            <div class="products-item has-sale">
+              <div class="products-item-cover">
+                <div class="products-item-label">
+                  <span class="label">Sale</span>
+                </div>
+                <img class="products-item-cover-thumb" src="./assets/images/products/product-03.jpg">
+              </div>
+              <a href="#" class="products-item-link">$190</a>
+            </div>
+          </div>
         </div>
-        <div class="products-item has-sale">
-          <div class="products-item-cover">
-            <div class="products-item-label">
-              <span class="label">Sale</span>
+        <div class="row">
+          <div class="col-xs-4">
+            <div class="products-item">
+              <div class="products-item-cover">
+                <div class="products-item-label">
+                  <span class="label">Sale</span>
+                </div>
+                <img class="products-item-cover-thumb" src="./assets/images/products/product-02.jpg">
+              </div>
+              <a href="#" class="products-item-link">$170</a>
             </div>
-            <img class="products-item-cover-thumb" src="./assets/images/products/product-02.jpg">
           </div>
-          <a href="#" class="products-item-link">$230</a>
-        </div>
-        <div class="products-item has-sale">
-          <div class="products-item-cover">
-            <div class="products-item-label">
-              <span class="label">Sale</span>
+          <div class="col-xs-4">
+            <div class="products-item">
+              <div class="products-item-cover">
+                <div class="products-item-label">
+                  <span class="label">Sale</span>
+                </div>
+                <img class="products-item-cover-thumb" src="./assets/images/products/product-03.jpg">
+              </div>
+              <a href="#" class="products-item-link">$230</a>
             </div>
-            <img class="products-item-cover-thumb" src="./assets/images/products/product-03.jpg">
           </div>
-          <a href="#" class="products-item-link">$190</a>
-        </div>
-        <div class="products-item">
-          <div class="products-item-cover">
-            <div class="products-item-label">
-              <span class="label">Sale</span>
+          <div class="col-xs-4">
+            <div class="products-item">
+              <div class="products-item-cover">
+                <div class="products-item-label">
+                  <span class="label">Sale</span>
+                </div>
+                <img class="products-item-cover-thumb" src="./assets/images/products/product-01.jpg">
+              </div>
+              <a href="#" class="products-item-link">$190</a>
             </div>
-            <img class="products-item-cover-thumb" src="./assets/images/products/product-02.jpg">
           </div>
-          <a href="#" class="products-item-link">$170</a>
-        </div>
-        <div class="products-item">
-          <div class="products-item-cover">
-            <div class="products-item-label">
-              <span class="label">Sale</span>
-            </div>
-            <img class="products-item-cover-thumb" src="./assets/images/products/product-03.jpg">
-          </div>
-          <a href="#" class="products-item-link">$230</a>
-        </div>
-        <div class="products-item">
-          <div class="products-item-cover">
-            <div class="products-item-label">
-              <span class="label">Sale</span>
-            </div>
-            <img class="products-item-cover-thumb" src="./assets/images/products/product-01.jpg">
-          </div>
-          <a href="#" class="products-item-link">$190</a>
         </div>
       </div>
     </main>
   </div>
 </body>
+
 </html>
