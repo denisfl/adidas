@@ -1,0 +1,10 @@
+.label {
+  display: inline-block;
+  padding: 7px 20px 6px;
+  background-color: var(--color-persimmon);
+  color: var(--color-white);
+  font-size: 14px;
+  font-family: var(--secondary-font-family);
+  font-weight: bold;
+  text-transform: uppercase;
+}
