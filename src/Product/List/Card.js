@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles.css';
-import Label from '../../Label'
+import Label from '../../Label';
 
 const ProductCard = ({ price, imgSrc, hasSale }) => {
   return (

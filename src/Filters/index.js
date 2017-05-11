@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
 import './styles.css';
-import Img from './filter.png';
+import React, { Component } from 'react';
+import filterIcon from './filter.png';
 import FilterSex from './FilterSex.js';
 import FilterSize from './FilterSize.js';
 
@@ -11,7 +11,7 @@ class Filters extends Component {
         <div className="filters-icon">
           <img
             className="filters-icon-thumb"
-            src={Img}
+            src={filterIcon}
             srcSet={`${require('./filter@2x.png')} 2x, ${require('./filter@3x.png')} 3x`}
             alt="Filter icon" />
         </div>
@@ -23,4 +23,3 @@ class Filters extends Component {
 }
 
 export default Filters;
-      

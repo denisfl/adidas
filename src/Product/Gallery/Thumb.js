@@ -9,6 +9,3 @@ const GalleryThumb = ({ imgSrc }) => {
 }
 
 export default GalleryThumb;
-
-      
-            
