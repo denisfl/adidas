@@ -1,5 +1,6 @@
 import './styles.css';
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class List extends Component {
   render() {
@@ -11,7 +12,7 @@ class List extends Component {
           </div>
           <div className="menu-sublist">
             <div className="menu-subitem">
-              <a href="#" className="menu-subitem-link">Shoes</a>
+              <Link to="/" className="menu-subitem-link">Shoes</Link>
             </div>
             <div className="menu-subitem">
               <a href="#" className="menu-subitem-link">Clothing</a>

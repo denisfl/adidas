@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './styles.css';
 import Label from '../../Label';
 
-const ProductCard = ({ price, imgSrc, hasSale }) => {
+const ProductCard = ({ hasSale, imgSrc, price, url }) => {
   return (
     <div className="products-item has-sale">
       <div className="products-item-cover">
@@ -13,10 +14,9 @@ const ProductCard = ({ price, imgSrc, hasSale }) => {
         }
         <img className="products-item-cover-thumb" src={imgSrc} alt="Product" />
       </div>
-      <a href="#" className="products-item-link">${price}</a>
+      <Link to={url} className="products-item-link">${price}</Link>
     </div>
   );
 }
 
 export default ProductCard;
-      
