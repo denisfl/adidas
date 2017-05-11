@@ -1,0 +1,76 @@
+:root {
+  --base-font-size: 24px;
+  --base-font-family: 'AndaleMono', Helvetica, Arial, sans-serif;
+
+  --secondary-font-family: 'AvenirNext', Helvetica, Arial, sans-serif;
+
+  --app-sidebar-width: 28.75%;
+  --app-main-padding: 23px;
+
+  --product-item-padding: 25px;
+
+  --color-alto: #DCDCDC;
+  --color-alto-dark: #D8D8D8;
+  --color-athens-gray: #E8E8EA;
+  --color-asphalt: #373737;
+  --color-bon-jour: #EBEBEB;
+  --color-blue-violet: #4949aa;
+  --color-cod-gray: #0D0D0D;
+  --color-cod-gray: #0E0E0E;
+  --color-danube: #4D87CA;
+  --color-dark-blue: #0C09BF;
+  --color-dove-gray: #6E6E6E;
+  --color-empreror: #2F2F2F;
+  --color-gallery: #D7D7D7;
+  --color-medium-purple: #966DD8;
+  --color-mercury: #E3E3E3;
+  --color-mercury-light: #E7E7E7;
+  --color-mine-shaft: #393939;
+  --color-nobel: #E0E0E0;
+  --color-persimmon: #FF5C5C;
+  --color-port-gore: #27275d;
+  --color-royal-blue: #4D42F8;
+  --color-scorpion: #3C3C3C;
+  --color-silver: #C5C5C5;
+  --color-silver-chalice: #C0C0C0;
+  --color-tundora: #4A4A4A;
+  --color-white: #FFFFFF;
+  --color-wild-sand: #F4F4F4;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--base-font-family);
+  font-size: var(--base-font-size);
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+.app-layout {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: var(--app-sidebar-width) auto;
+}
+
+.app-sidebar {
+  padding-left: 22px;
+  padding-right: 22px;
+  background-color: var(--color-cod-gray);
+}
+
+.app-sidebar-header {
+  padding-top: 34px;
+}
+
+.app-sidebar-main {
+  padding-top: 151px;
+}
