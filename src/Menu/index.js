@@ -1,38 +1,37 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import './styles.css';
+import { Menu, MenuItem, MenuLink, SubMenu, SubMenuItem, SubMenuLink } from './styled';
 
 class List extends Component {
   render() {
     return (
-      <nav className="menu">
-        <div className="menu-item is-active">
-          <div className="menu-item-title">
-            <a className="menu-item-link" href="#">Sports</a>
+      <Menu>
+        <MenuItem className="is-active">
+          <div>
+            <MenuLink to="/">Sports</MenuLink>
           </div>
-          <div className="menu-sublist">
-            <div className="menu-subitem">
-              <Link to="/" className="menu-subitem-link">Shoes</Link>
-            </div>
-            <div className="menu-subitem">
-              <a href="#" className="menu-subitem-link">Clothing</a>
-            </div>
-            <div className="menu-subitem">
-              <a href="#" className="menu-subitem-link">Accesories</a>
-            </div>
+          <SubMenu>
+            <SubMenuItem>
+              <SubMenuLink to="/">Shoes</SubMenuLink>
+            </SubMenuItem>
+            <SubMenuItem>
+              <SubMenuLink to="/">Clothing</SubMenuLink>
+            </SubMenuItem>
+            <SubMenuItem>
+              <SubMenuLink to="/">Accesories</SubMenuLink>
+            </SubMenuItem>
+          </SubMenu>
+        </MenuItem>
+        <MenuItem>
+          <div>
+            <MenuLink to="/">Brands</MenuLink>
           </div>
-        </div>
-        <div className="menu-item">
-          <div className="menu-item-title">
-            <a className="menu-item-link" href="#">Brands</a>
+        </MenuItem>
+        <MenuItem>
+          <div>
+            <MenuLink to="/">Micoach</MenuLink>
           </div>
-        </div>
-        <div className="menu-item">
-          <div className="menu-item-title">
-            <a className="menu-item-link" href="#">Micoach</a>
-          </div>
-        </div>
-      </nav>
+        </MenuItem>
+      </Menu>
     );
   }
 }

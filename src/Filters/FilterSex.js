@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
+import { FiltersGroup, Button } from './styled';
 
 class FilterSex extends Component {
   render() {
     return (
-      <div className="filters-group">
-        <button className="filters-group-item is-active" type="button">Man</button>
-        <button className="filters-group-item" type="button">Woman</button>
-      </div>
+      <FiltersGroup>
+        <Button isActive>Man</Button>
+        <Button>Woman</Button>
+      </FiltersGroup>
     );
   }
 }

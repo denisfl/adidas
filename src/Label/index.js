@@ -1,13 +1,17 @@
-import React, { Component } from 'react';
-import './styles.css';
+import React from 'react';
+import styled from 'styled-components';
 
-class Label extends Component {
-  render() {
-    return (
-      <span className="label">Sale</span>
-    );
-  }
-}
+const Wrapper = styled.span`
+  display: inline-block;
+  padding: 7px 20px 6px;
+  background-color: #FF5C5C;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-family: 'AvenirNext', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+`;
 
-export default Label;
-      
+export default () => (
+  <Wrapper>Sale</Wrapper>
+);

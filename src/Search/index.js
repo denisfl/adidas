@@ -1,11 +1,12 @@
 import React from 'react';
 import './styles.css';
+import { Wrapper, Label, Input } from './styled';
 
 export default () => (
-  <div className="search">
-    <label htmlFor="search-field" className="search-label">
-      <svg className="search-icon"><use xlinkHref="#icon-search"></use></svg>
-    </label>
-    <input id="search-field" className="search-input" type="text" name="search-field" />
-  </div>
+  <Wrapper>
+    <Label htmlFor="search-field">
+      <svg><use xlinkHref="#icon-search"></use></svg>
+    </Label>
+    <Input id="search-field" className="search-input" type="text" name="search-field" />
+  </Wrapper>
 );

@@ -1,22 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Logo from '../Logo';
 import Search from '../Search';
 import Menu from '../Menu';
+import { Wrapper, Header, Main } from './styled';
 
-class Sidebar extends Component {
-  render() {
-    return (
-      <aside className="app-sidebar">
-        <div className="app-sidebar-header">
-          <Logo/>
-          <Search/>
-        </div>
-        <div className="app-sidebar-main">
-          <Menu/>
-        </div>
-      </aside>
-    );
-  }
-}
-
-export default Sidebar;
+export default () => (
+  <Wrapper>
+    <Header>
+      <Logo/>
+      <Search/>
+    </Header>
+    <Main>
+      <Menu/>
+    </Main>
+  </Wrapper>
+);
