@@ -1,6 +1,6 @@
-import './styles.css';
 import React from 'react';
 import logo from './logo.png';
+import './styles.css';
 
 export default () => (
   <div className="logo">

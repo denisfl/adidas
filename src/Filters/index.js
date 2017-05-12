@@ -1,8 +1,8 @@
-import './styles.css';
 import React, { Component } from 'react';
 import filterIcon from './filter.png';
-import FilterSex from './FilterSex.js';
-import FilterSize from './FilterSize.js';
+import FilterSex from './FilterSex';
+import FilterSize from './FilterSize';
+import './styles.css';
 
 class Filters extends Component {
   render() {

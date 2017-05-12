@@ -1,7 +1,7 @@
-import './styles.css';
 import React, { Component } from 'react';
 import ProductCard from './Card';
 import Filters   from '../../Filters';
+import './styles.css';
 
 class ProductList extends Component {
   render() {

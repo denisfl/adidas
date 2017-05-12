@@ -1,6 +1,6 @@
-import './styles.css';
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import './styles.css';
 
 class List extends Component {
   render() {

@@ -1,11 +1,9 @@
 import React from 'react';
 
-const GalleryThumb = ({ imgSrc }) => {
+export default ({ src }) => {
   return (
-      <button className="product-gallery-tumb">
-        <img className="product-gallery-img" src={imgSrc} alt="Product" />
+    <button className="product-gallery-tumb">
+      <img className="product-gallery-img" src={src} alt="Product" />
     </button>
   );
-}
-
-export default GalleryThumb;
+};

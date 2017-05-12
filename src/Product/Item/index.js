@@ -1,8 +1,10 @@
-import './styles.css';
 import React, { Component } from 'react';
 import Label from '../../Label';
 import Colors from '../Colors';
 import Gallery from '../Gallery';
+import Price from './Price';
+import Title from './Title';
+import './styles.css';
 
 class ProductItem extends Component {
   render() {
@@ -10,7 +12,7 @@ class ProductItem extends Component {
       <div className="product">
         <div className="product-header">
           <div className="product-header-col">
-            <h1 className="product-title">ULTRA <br/>BOOST</h1>
+            <Title title="ULTRA BOOST" />
             <button className="product-save">Save</button>
           </div>
           <div className="product-header-col product-header-options">
@@ -18,7 +20,7 @@ class ProductItem extends Component {
               <Colors />
               <Label />
             </div>
-            <h2 className="product-price">$170</h2>
+            <Price value="170" />
           </div>
         </div>
         <Gallery />
