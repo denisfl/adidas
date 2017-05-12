@@ -7,7 +7,7 @@ class List extends Component {
     return (
       <nav className="menu">
         <div className="menu-item is-active">
-          <div className="menu-item-itle">
+          <div className="menu-item-title">
             <a className="menu-item-link" href="#">Sports</a>
           </div>
           <div className="menu-sublist">
