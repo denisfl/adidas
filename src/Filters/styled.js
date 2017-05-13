@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
-export const FiltersWrapper = styled.div`
+export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   padding: 11px 23px 35px;
 `;
 
-export const FiltersIcon = styled.div`
+export const Icon = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,7 +21,7 @@ export const FiltersIcon = styled.div`
   }
 `;
 
-export const FiltersGroup = styled.div`
+export const Group = styled.div`
   display: flex;
   align-items: center;
 

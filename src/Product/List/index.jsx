@@ -1,6 +1,6 @@
 import React from 'react';
 import { Row, Col } from 'react-flexbox-grid';
-import ProductCard from './Card';
+import Card from './Card';
 import Filters from '../../Filters';
 import { Wrapper } from './styled';
 
@@ -10,7 +10,7 @@ export default () => (
     <Wrapper>
       <Row>
         <Col xs={12} sm={6} lg={4}>
-          <ProductCard
+          <Card
             url="/item"
             price="230"
             imgSrc={require('./product-01.jpg')}
@@ -18,7 +18,7 @@ export default () => (
           />
         </Col>
         <Col xs={12} sm={6} lg={4}>
-          <ProductCard
+          <Card
             url="/item"
             price="170"
             imgSrc={require('./product-02.jpg')}
@@ -26,14 +26,10 @@ export default () => (
           />
         </Col>
         <Col xs={12} sm={6} lg={4}>
-          <ProductCard
-            url="/item"
-            price="180"
-            imgSrc={require('./product-03.jpg')}
-          />
+          <Card url="/item" price="180" imgSrc={require('./product-03.jpg')} />
         </Col>
         <Col xs={12} sm={6} lg={4}>
-          <ProductCard
+          <Card
             url="/item"
             price="170"
             imgSrc={require('./product-02.jpg')}
@@ -41,7 +37,7 @@ export default () => (
           />
         </Col>
         <Col xs={12} sm={6} lg={4}>
-          <ProductCard
+          <Card
             url="/item"
             price="230"
             imgSrc={require('./product-03.jpg')}
@@ -49,11 +45,7 @@ export default () => (
           />
         </Col>
         <Col xs={12} sm={6} lg={4}>
-          <ProductCard
-            url="/item"
-            price="170"
-            imgSrc={require('./product-01.jpg')}
-          />
+          <Card url="/item" price="170" imgSrc={require('./product-01.jpg')} />
         </Col>
       </Row>
     </Wrapper>

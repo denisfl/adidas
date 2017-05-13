@@ -2,8 +2,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import '../node_modules/normalize.css/normalize.css';
-import '../node_modules/flexboxgrid/css/flexboxgrid.min.css';
+import 'normalize.css';
 import './fonts.css';
 import './index.css';
 import App from './App';
