@@ -25,7 +25,13 @@ class ProductItem extends Component {
         </div>
         <Gallery />
         <div className="product-description">
-          <p><a href="http://www.adidas.ru/">Adidas</a> is a German multinational corporation, headquartered in Herzogenaurach, Germany, that designs and manufactures shoes, clothing and accessories.</p>
+          <p>
+            <a href="http://www.adidas.ru/">Adidas</a>
+            {' '}
+            is a German multinational corporation, headquartered in Herzogenaurach, Germany,
+            {' '}
+            that designs and manufactures shoes, clothing and accessories.
+          </p>
         </div>
         <div className="product-footer">
           <button className="product-buy">Buy now</button>
@@ -36,4 +42,3 @@ class ProductItem extends Component {
 }
 
 export default ProductItem;
-      

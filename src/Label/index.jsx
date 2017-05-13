@@ -12,6 +12,4 @@ const Wrapper = styled.span`
   text-transform: uppercase;
 `;
 
-export default () => (
-  <Wrapper>Sale</Wrapper>
-);
+export default () => <Wrapper>Sale</Wrapper>;

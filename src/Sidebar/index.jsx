@@ -7,11 +7,11 @@ import { Wrapper, Header, Main } from './styled';
 export default () => (
   <Wrapper>
     <Header>
-      <Logo/>
-      <Search/>
+      <Logo />
+      <Search />
     </Header>
     <Main>
-      <Menu/>
+      <Menu />
     </Main>
   </Wrapper>
 );

@@ -43,7 +43,7 @@ export const Button = styled.button`
   padding: 0;
   background-color: transparent;
   border: none;
-  color: ${props => props.isActive ? '#4D42F8' : '#D7D7D7'};
+  color: ${props => (props.isActive ? '#4D42F8' : '#D7D7D7')};
   cursor: pointer;
   text-transform: uppercase;
   font-family: 'AvenirNext', Helvetica, Arial, sans-serif;
