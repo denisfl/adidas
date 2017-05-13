@@ -1,5 +1,4 @@
 import React from 'react';
-// import './styles.css';
 import Label from '../../Label';
 import { Item, Cover, LabelWrapper, ItemLink } from './styled';
 
