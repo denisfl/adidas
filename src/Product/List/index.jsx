@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import ProductCard from './Card';
 import Filters from '../../Filters';
-import './styles.css';
+import { Wrapper } from './styled';
 
 class ProductList extends Component {
   render() {
     return (
       <div>
         <Filters />
-        <div className="products">
+        <Wrapper>
           <div className="row">
             <div className="col-xs-4">
               <ProductCard
@@ -57,7 +57,7 @@ class ProductList extends Component {
               />
             </div>
           </div>
-        </div>
+        </Wrapper>
       </div>
     );
   }

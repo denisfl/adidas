@@ -1,8 +1,9 @@
 import React from 'react';
+import { MoreButton } from './styled';
 
 export default () => (
-  <button className="product-gallery-more">
+  <MoreButton>
     <svg><use xlinkHref="#icon-more" /></svg>
     <span>see more photos</span>
-  </button>
+  </MoreButton>
 );

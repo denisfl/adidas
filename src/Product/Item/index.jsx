@@ -1,44 +1,30 @@
-import React, { Component } from 'react';
-import Label from '../../Label';
+import React from 'react';
+import BuyButton from './BuyButton';
 import Colors from '../Colors';
+import Description from './Description';
 import Gallery from '../Gallery';
+import Label from '../../Label';
 import Price from './Price';
 import Title from './Title';
-import './styles.css';
+import { Wrapper, Header, HeaderCol, SaveButton } from './styled';
 
-class ProductItem extends Component {
-  render() {
-    return (
-      <div className="product">
-        <div className="product-header">
-          <div className="product-header-col">
-            <Title title="ULTRA BOOST" />
-            <button className="product-save">Save</button>
-          </div>
-          <div className="product-header-col product-header-options">
-            <div>
-              <Colors />
-              <Label />
-            </div>
-            <Price value="170" />
-          </div>
+export default () => (
+  <Wrapper>
+    <Header>
+      <HeaderCol>
+        <Title title="ULTRA BOOST" />
+        <SaveButton>Save</SaveButton>
+      </HeaderCol>
+      <HeaderCol options>
+        <div>
+          <Colors />
+          <Label />
         </div>
-        <Gallery />
-        <div className="product-description">
-          <p>
-            <a href="http://www.adidas.ru/">Adidas</a>
-            {' '}
-            is a German multinational corporation, headquartered in Herzogenaurach, Germany,
-            {' '}
-            that designs and manufactures shoes, clothing and accessories.
-          </p>
-        </div>
-        <div className="product-footer">
-          <button className="product-buy">Buy now</button>
-        </div>
-      </div>
-    );
-  }
-}
-
-export default ProductItem;
+        <Price value="170" />
+      </HeaderCol>
+    </Header>
+    <Gallery />
+    <Description />
+    <BuyButton />
+  </Wrapper>
+);

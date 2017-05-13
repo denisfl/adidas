@@ -1,7 +1,8 @@
 import React from 'react';
+import { Cover, CoverImg } from './styled';
 
 export default ({ src }) => (
-  <div className="product-gallery-cover">
-    <img className="product-gallery-img" src={src} alt="Product cover" />
-  </div>
+  <Cover>
+    <CoverImg src={src} alt="Product cover" />
+  </Cover>
 );

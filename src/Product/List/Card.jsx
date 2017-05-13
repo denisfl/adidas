@@ -1,19 +1,19 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import './styles.css';
+// import './styles.css';
 import Label from '../../Label';
+import { Item, Cover, LabelWrapper, ItemLink } from './styled';
 
 const ProductCard = ({ hasSale, imgSrc, price, url }) => (
-  <div className="products-item has-sale">
-    <div className="products-item-cover">
+  <Item>
+    <Cover>
       {hasSale &&
-        <div className="products-item-label">
+        <LabelWrapper>
           <Label />
-        </div>}
-      <img className="products-item-cover-thumb" src={imgSrc} alt="Product" />
-    </div>
-    <Link to={url} className="products-item-link">${price}</Link>
-  </div>
+        </LabelWrapper>}
+      <img src={imgSrc} alt="Product" />
+    </Cover>
+    <ItemLink to={url} hasSale={hasSale}>${price}</ItemLink>
+  </Item>
 );
 
 export default ProductCard;

@@ -1,3 +1,4 @@
 import React from 'react';
+import { Price } from './styled';
 
-export default ({ value }) => <h2 className="product-price">${value}</h2>;
+export default ({ value }) => <Price>${value}</Price>;

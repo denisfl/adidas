@@ -1,3 +1,4 @@
 import React from 'react';
+import { Title } from './styled';
 
-export default ({ title }) => <h1 className="product-title">{title}</h1>;
+export default ({ title }) => <Title>{title}</Title>;

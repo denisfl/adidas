@@ -1,7 +1,8 @@
 import React from 'react';
+import { Thumb } from './styled';
 
-export default ({ src }) => (
-  <button className="product-gallery-tumb">
-    <img className="product-gallery-img" src={src} alt="Product" />
-  </button>
+export default ({ src, isSelected }) => (
+  <Thumb isSelected={isSelected}>
+    <img src={src} alt="Product" />
+  </Thumb>
 );
