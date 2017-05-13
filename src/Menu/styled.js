@@ -27,14 +27,10 @@ export const MenuLink = styled(Link)`
   position: relative;
   font-weight: bold;
   font-family: 'AvenirNext', Helvetica, Arial, sans-serif;
-  color: #2F2F2F;
+  color: ${p => (p.isActive ? '#FFFFFF' : '#2F2F2F')};
 
-  .is-active & {
-    color: #FFFFFF;
-  }
-  
-  .is-active &:after {
-    content: "";
+  &:after {
+    content: ${p => (p.isActive ? '""' : 'none')};
     position: absolute;
     right: -20px;
     top: 12px;

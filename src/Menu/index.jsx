@@ -12,7 +12,7 @@ export default () => (
   <Menu>
     <MenuItem className="is-active">
       <div>
-        <MenuLink to="/">Sports</MenuLink>
+        <MenuLink to="/" isActive>Sports</MenuLink>
       </div>
       <SubMenu>
         <SubMenuItem>
