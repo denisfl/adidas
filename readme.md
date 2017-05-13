@@ -1,3 +1,2 @@
-`npm i`
-
-Запустить любой локальный сервер в папке. Например, на маке можно сделать `python -m SimpleHTTPServer 3000`
+`yarn install`
+`yarn start`
