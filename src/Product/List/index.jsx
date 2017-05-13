@@ -1,66 +1,61 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { Row, Col } from 'react-flexbox-grid';
 import ProductCard from './Card';
 import Filters from '../../Filters';
 import { Wrapper } from './styled';
 
-class ProductList extends Component {
-  render() {
-    return (
-      <div>
-        <Filters />
-        <Wrapper>
-          <div className="row">
-            <div className="col-xs-4">
-              <ProductCard
-                url="/item"
-                price="230"
-                imgSrc={require('./product-01.jpg')}
-                hasSale
-              />
-            </div>
-            <div className="col-xs-4">
-              <ProductCard
-                url="/item"
-                price="170"
-                imgSrc={require('./product-02.jpg')}
-                hasSale
-              />
-            </div>
-            <div className="col-xs-4">
-              <ProductCard
-                url="/item"
-                price="180"
-                imgSrc={require('./product-03.jpg')}
-              />
-            </div>
-            <div className="col-xs-4">
-              <ProductCard
-                url="/item"
-                price="170"
-                imgSrc={require('./product-02.jpg')}
-                hasSale
-              />
-            </div>
-            <div className="col-xs-4">
-              <ProductCard
-                url="/item"
-                price="230"
-                imgSrc={require('./product-03.jpg')}
-                hasSale
-              />
-            </div>
-            <div className="col-xs-4">
-              <ProductCard
-                url="/item"
-                price="170"
-                imgSrc={require('./product-01.jpg')}
-              />
-            </div>
-          </div>
-        </Wrapper>
-      </div>
-    );
-  }
-}
-
-export default ProductList;
+export default () => (
+  <div>
+    <Filters />
+    <Wrapper>
+      <Row>
+        <Col xs={12} sm={6} lg={4}>
+          <ProductCard
+            url="/item"
+            price="230"
+            imgSrc={require('./product-01.jpg')}
+            hasSale
+          />
+        </Col>
+        <Col xs={12} sm={6} lg={4}>
+          <ProductCard
+            url="/item"
+            price="170"
+            imgSrc={require('./product-02.jpg')}
+            hasSale
+          />
+        </Col>
+        <Col xs={12} sm={6} lg={4}>
+          <ProductCard
+            url="/item"
+            price="180"
+            imgSrc={require('./product-03.jpg')}
+          />
+        </Col>
+        <Col xs={12} sm={6} lg={4}>
+          <ProductCard
+            url="/item"
+            price="170"
+            imgSrc={require('./product-02.jpg')}
+            hasSale
+          />
+        </Col>
+        <Col xs={12} sm={6} lg={4}>
+          <ProductCard
+            url="/item"
+            price="230"
+            imgSrc={require('./product-03.jpg')}
+            hasSale
+          />
+        </Col>
+        <Col xs={12} sm={6} lg={4}>
+          <ProductCard
+            url="/item"
+            price="170"
+            imgSrc={require('./product-01.jpg')}
+          />
+        </Col>
+      </Row>
+    </Wrapper>
+  </div>
+);
