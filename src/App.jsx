@@ -4,8 +4,8 @@ import styled from 'styled-components';
 
 import SVGSprite from './SVGSprite';
 import Sidebar from './Sidebar';
-import Products from './Product/List';
-import Product from './Product/Item';
+import Products from './Products/List';
+import Product from './Products/Item';
 
 const Layout = styled.div`
   display: grid;
