@@ -1,8 +1,10 @@
-.search {
-  position: relative;
-}
+import styled from 'styled-components';
 
-.search-label {
+export const Wrapper = styled.aside`
+  position: relative;
+`;
+
+export const Label = styled.label`
   position: absolute;
   top: 0;
   left: 0;
@@ -11,28 +13,28 @@
   justify-content: center;
   align-items: center;
   width: 54px;
-}
 
-.search-icon {
-  width: 28px;
-  height: 30px;
-}
+  > svg {
+    width: 28px;
+    height: 30px;
+  }
+`;
 
-.search-input {
+export const Input = styled.input`
   padding: 10px 10px 10px 55px;
   width: 100%;
   height: 54px;
   box-sizing: border-box;
   background-color: transparent;
-  color: var(--color-mine-shaft);
+  color: ##393939;
   border: none;
-  border-bottom: 4px solid var(--color-asphalt);
+  border-bottom: 4px solid #373737;
   text-transform: uppercase;
-  font-size: var(--base-font-size);
+  font-size: 24px;
   font-weight: bold;
-}
 
-.search-input:focus {
-  outline: none;
-  border-bottom-color: var(--color-alto);
-}
+  &:focus {
+    outline: none;
+    border-bottom-color: #DCDCDC;
+  }
+`;

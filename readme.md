@@ -1,3 +1,9 @@
-`npm i`
+## How to run the project
 
-Запустить любой локальный сервер в папке. Например, на маке можно сделать `python -m SimpleHTTPServer 3000`
+`yarn install`
+
+`yarn start` — for starting a dev server
+
+`yarn build` — for building a version for a production
+
+`yarn lint` — for being sure that your code is exactly amazing for the World
