@@ -39,7 +39,7 @@ export const Label = styled.div`
 `;
 
 export const Button = styled.button`
-  margin-left: 16px;
+  margin-left: 10px;
   padding: 0;
   background-color: transparent;
   border: none;

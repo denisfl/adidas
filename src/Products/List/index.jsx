@@ -1,7 +1,7 @@
 import React from 'react';
 import { Row, Col } from 'react-flexbox-grid';
 import Card from './Card';
-import Filters from '../Filters';
+import Filters from './Filters';
 import { Wrapper } from './styled';
 
 export default () => (
