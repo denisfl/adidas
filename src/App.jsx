@@ -8,9 +8,14 @@ import Products from './Products/List';
 import Product from './Products/Item';
 
 const Layout = styled.div`
-  display: grid;
+  padding-top: 65px;
   min-height: 100vh;
-  grid-template-columns: 28.75% auto;
+
+  @media (min-width: 1024px) {
+    display: grid;
+    grid-template-columns: 28.75% auto;
+    padding-top: 0;
+  }
 `;
 
 export default () => (
