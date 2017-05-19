@@ -4,8 +4,13 @@ import { Link } from 'react-router-dom';
 export const Wrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
-  padding-left: 23px;
-  padding-right: 23px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media (min-width: 768px) {
+    padding-left: 23px;
+    padding-right: 23px;
+  }
 `;
 
 export const Item = styled.div`

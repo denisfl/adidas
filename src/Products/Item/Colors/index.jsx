@@ -4,7 +4,12 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
   display: inline-flex;
   vertical-align: middle;
-  margin-right: 25px;
+  order: 2;
+
+  @media (min-width: 1024px) {
+    order: 1;
+    margin-right: 25px;
+  }
 `;
 
 const Button = styled.button`

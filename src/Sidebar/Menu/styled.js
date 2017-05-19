@@ -2,11 +2,16 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const Menu = styled.nav`
+  display: none;
   text-align: center;
   text-transform: uppercase;
 
   a:hover {
     text-decoration: underline;
+  }
+
+  @media (min-width: 1024px) {
+    display: block;
   }
 `;
 

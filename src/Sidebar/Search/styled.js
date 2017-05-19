@@ -2,6 +2,11 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.aside`
   position: relative;
+  display: none;
+
+  @media (min-width: 1024px) {
+    display: block;
+  }
 `;
 
 export const Label = styled.label`
