@@ -28,11 +28,12 @@ export const SubMenuItem = styled.div`
   margin-bottom: 26px;
 `;
 
-export const MenuLink = styled(Link)`
+export const MenuLink = styled.a`
   position: relative;
   font-weight: bold;
   font-family: 'AvenirNext', Helvetica, Arial, sans-serif;
   color: ${p => (p.isActive ? '#FFFFFF' : '#2F2F2F')};
+  cursor: pointer;
 
   &:after {
     content: ${p => (p.isActive ? '""' : 'none')};
@@ -46,9 +47,5 @@ export const MenuLink = styled(Link)`
 `;
 
 export const SubMenuLink = styled(Link)`
-  color: #3C3C3C;
-
-  .is-active & {
-    color: #FFFFFF;
-  }
+  color: #FFFFFF;
 `;
